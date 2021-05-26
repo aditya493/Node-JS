@@ -104,3 +104,6 @@ link.printList();
 
 // LENGTH OF THE LIST
 console.log(`Size: ${link.size}`);
+
+
+
