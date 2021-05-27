@@ -26,5 +26,5 @@ app.use('/',(req,res,next) =>{
 const server = http.createServer(app)
 
 server.listen(4000,"localhost",()=>{
-    console.log("listening")
+    console.log("listening");
 })
