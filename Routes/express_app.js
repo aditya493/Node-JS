@@ -7,14 +7,17 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-app.use(bodyParser.urlencoded())
-
+// app.use(bodyParser.urlencoded())
+const contact = require('./contactus.js')
 const admin = require('./admin.js')
+const success = require('./sucess.js')
 const shop = require('./shop.js')
 
 app.use(admin)
-
+app.use(contact)
+app.use(success)
 app.use(shop)
+
 
 const server = http.createServer(app)
 
