@@ -2,12 +2,15 @@ const fs = require('fs')
 const http=require('http')
 
 
+
 const express = require('express');
 const bodyParser = require('body-parser');
 
+const path = require('path')
 const app = express();
 
 // app.use(bodyParser.urlencoded())
+app.use(express.static(path.join(__dirname,'../','public')))
 const contact = require('./contactus.js')
 const admin = require('./admin.js')
 const success = require('./sucess.js')
